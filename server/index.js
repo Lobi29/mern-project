@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import AuthRoute from './Routes/AuthRoute.js';
 import UserRoute from './Routes/UserRoute.js';
+import PostRoute from './Routes/PostRoute.js';
 
 // Routes
 
@@ -49,3 +50,4 @@ mongoose
 // usage of Routes 
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute);
+app.use('/post', PostRoute);
